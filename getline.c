@@ -4,6 +4,14 @@
 #include <string.h>
 
 
+/************************************************/
+/*  Author  : ABDULLAH AYMAN                    */
+/*  Date    : 31/1/2024  8:00PM                 */
+/* topic    : Basic Shell concept               */
+/* version  : 1.0                               */
+/************************************************/
+//------Code------//
+
 
 int main (void)
 {
