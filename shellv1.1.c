@@ -4,43 +4,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-
-
-
-/************************************************/
-/*  Author  : ABDULLAH AYMAN                    */
-/*  Date    : 3/2/2024  12:14AM                 */
-/* topic    : Basic Shell concept               */
-/* version  : 1.1                               */
-/************************************************/
-//------Code------//
-
-
-int main (void)
-{
-	char* buffer = NULL;
-	size_t n =10;
-	while(1)
-	{
-		printf(":)");
-		getline(&buffer,&n,stdin);
-		printf("you said :%s\n",buffer);\
-		//remove the newline character in the entered cmd
-		buffer[strcspn(buffer,"\n")]='\0';
-		//check if the entered string is exit
-		if(strcmp(buffer , "exit") == 0)
-		{
-			printf(":( good bye\n");
-			break;
-		}
-		
-		
-	}
-	free(buffer);
-	return 0;
-
-}
-
 //Prototypes
 int pwd (int argc , char * argv[]);
 int IS_REG(const char* Path);
@@ -116,7 +79,7 @@ int main (void)
 			}
 					
                	}
-		else if(strcmp(argv[0],"myecho\n") == 0)
+		else if(strcmp(argv[0],"myecho") == 0)
                 {
                         if(echo(argc ,argv) !=0)
                         {
