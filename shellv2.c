@@ -23,7 +23,7 @@ typedef enum {
 int echo(int argc, char *argv[]);                                 //
 char** tokenize_and_parse(char *input, CMD_t* CMD ,int* result);  //
 void EXECUTER(char** argv , char* PATH);                          //
-///////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
 
 int main(void)
 {
